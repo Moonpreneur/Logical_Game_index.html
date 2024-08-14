@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Puzzle</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="logo-container">
+        <img src="logo.png" alt="Logo"> 
+    </div>
+
+    <div class="container" id="screen0" style="background-image: url(''); background-size: cover; background-position: center;">
+        <div class="button" id="startGameButton">Start Game</div>
+    </div>
+
+    <div class="container" id="screen1" style="display: none;">
+        <div class="button" id="beginnerButton">Beginner!</div>
+    </div>
+
+    <div class="container" id="screen2" style="display: none;">
+        <div class="container">
+            <div class="level" id="level1">Level 1</div>
+            <div class="level" id="level2">Level 2</div>
+            <div class="level" id="level3">Level 3</div>
+            <div class="level" id="level4">Level 4</div>
+            <div class="level" id="level5">Level 5</div>
+        </div>
+    </div>
+
+    <div class="container" id="screen3" style="display: none;">
+        <div id="level-container">
+            <button id="prevButton"><<</button>
+            <div id="level-title">Level <span id="current-level"></span></div>
+            <button id="nextButton">>></button>
+        </div>
+        <div id="timer">Time Left: <span id="time-left">03:00</span></div>
+        <div id="puzzle"></div>
+        <div id="draggables"></div>
+        <div id="score-container">
+            <p>Score: <span id="score">0</span></p>
+        </div>
+        <div id="submit-container">
+            <button id="resetGameButton">Reset Game</button>
+        </div>
+    </div>
+
+    <div class="container" id="gameOverScreen" style="display: none;">
+        <div class="game-over-text">Game Over!</div>
+        <div id="finalScore">Your Score: <span id="final-score"></span></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
